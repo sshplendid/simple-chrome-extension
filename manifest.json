@@ -1,17 +1,8 @@
 {
-  "name": "크롬 플러그인 시작하기",
-  "version": "0.1",
-  "description": "플러그인을 만들자!",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
   "manifest_version": 2,
-  "background": {
-    "scripts": ["./resources/scripts/background.js"],
-    "persistent": false
-  },
-  "icons": {
-    "128": "./resources/images/ico128.png"
-  },
-  "page_action": {
-    "default_popup": "popup.html"
-  }
+  "name": "Break the new Tab!",
+  "version": "0.1",
+  "description": "깨부수자 깨부수자",
+  "permissions": ["management", "storage", "activeTab", "declarativeContent"],
+  "chrome_url_overrides": { "newtab": "breakout.html" }
 }
